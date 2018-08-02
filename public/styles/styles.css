@@ -92,6 +92,7 @@ img::-moz-selection {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
+  z-index:100;
 }
 
 #mainNav .navbar-brand {
