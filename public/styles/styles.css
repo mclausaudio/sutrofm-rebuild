@@ -10,13 +10,13 @@ body {
   margin: 0;
   padding:0;
   width:100%;
-  min-height:100vh;
-  overflow: hidden;
+  min-height:100%;
+  /*overflow: hidden;*/
 }
 
 .overlay {
   position:absolute;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
   top: 0;
   bottom: 0;
   height:100%;
@@ -31,6 +31,16 @@ nav {
     z-index:100;
 }
 
+.nav-link {
+    color:white!important;
+    opacity:1;
+}
+.nav-link:hover {
+    color:red!important;
+}
+.navbar-brand:hover {
+    color:teal!important;
+}
 
 
 /*HERO SECTION*/ /*HERO SECTION*/ /*HERO SECTION*/ /*HERO SECTION*/ /*HERO SECTION*/ /*HERO SECTION*/
