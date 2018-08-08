@@ -7,49 +7,80 @@
     <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Pollux</title>
+    <title>sutrofm</title>
   <meta name="author" content="Michael Claus">
-  <meta name="description" content="Voting App">
-  <meta name="keywords" content="vote voting application app node express">
+  <meta name="description" content="SutroFM Online Radio Station">
+  <meta name="keywords" content="Sutro FM Online Radio San Francisco California">
   
   <!--<link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700" rel="stylesheet">-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  
+  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
   <!-- Custom fonts for this template -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-  
+   <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
+   <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet" />
+   
+   
+   <!-- RADIOJAR -->
+   <link rel="stylesheet" href="styles/player.css">
+  <!-- my CSS -->
   <link rel="stylesheet" href="styles/styles.css" />
   </head>
-<body id="page-top">
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="/polls">Pollux</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+  <a class="navbar-brand" href="#">...sutrofm</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <% if (!currentUser) { %>
-              <li class="nav-item">
-                <a class="nav-link" href="/signup">Sign Up</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/login">Login</a>
-              </li>
-            <% } else {  %>
-              <li class="nav-item">
-                <a class="nav-link" href="/polls/mypolls">My Polls</a>
-              </li>            
-              <li class="nav-item">
-                <a class="nav-link" href="/logout">Logout</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Signed in as <%= currentUser.username %></a>
-              </li>
-            <% } %>
-          </ul>
-        </div>
-      </div>
-    </nav>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!--mr-auto-->
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!--<div id="app" class="container">-->
+<!--    <nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+<!--        <a class="navbar-brand" href="#">Navbar</a>-->
+<!--        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--            <span class="navbar-toggler-icon"></span>-->
+<!--        </button>-->
+<!--        <div id="navbarNavDropdown" class="navbar-collapse collapse">-->
+<!--            <ul class="navbar-nav mr-auto">-->
+<!--                <li class="nav-item active">-->
+<!--                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="#">Features</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="#">Pricing</a>-->
+<!--                </li>-->
+
+<!--            </ul>-->
+<!--            <ul class="navbar-nav">-->
+<!--                <li class="nav-item dropdown">-->
+<!--                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--                      Dropdown-->
+<!--                    </a>-->
+<!--                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">-->
+<!--                        <a class="dropdown-item" href="#">Action</a>-->
+<!--                        <a class="dropdown-item" href="#">Another action</a>-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="{{ url('/login') }}">Login</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="{{ url('/register') }}">Register</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </nav>-->
+<!--</div>-->

@@ -1,36 +1,75 @@
 <% include ./partials/header %>
 
-    <!-- Navigation -->
 
-    <header class="masthead text-center text-white d-flex">
-      <div class="overlay"></div>
-      <div class="container my-auto">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h1 class="text-uppercase">
-              <strong>Find Out What People Really Think</strong>
-            </h1>
-            <hr>
-          </div>
-          <div class="col-lg-8 mx-auto">
-            <p class="text-faded mb-5">Pollux is a free and easy way to find out what your team is really thinking.  Get started creating anonymous polls for you and your team to make better decisions.</p>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="/polls">Get Started!</a>
-          </div>
-        </div>
-      </div>
-    </header>
+<section id="hero">
+  <video playsinline autoplay muted loop poster="img/estudy.jpg">
+  <!--<source src="CGI Animation Of Water.mp4" type="video/mp4">-->
+  <source src="static1.mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+  <div class="hero-text">
+      <span class="letter">S</span><span class="letter">u</span><span class="letter">t</span><span class="letter">r</span><span class="letter">o</span><span class="letter">f</span><span class="letter">m</span>
+  </div>
+</section>
 
-    <section class="bg-primary" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">We've got what you need!</h2>
-            <hr class="light my-4">
-            <p class="text-faded mb-4">What are you waiting for?  Sign up with Pollux and start making polls to find out what the people around you are really thinking.  No email neccesary and no strings attached!</p>
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="/polls">Get Started!</a>
-          </div>
-        </div>
-      </div>
-    </section>
+<footer class="player">
+  <div id="rj-player">
+ <div class="rjp-player-container">
+  <div id="rjp-radiojar-player"></div>
+  <div id="rj-player-controls" class="rj-player-controls">
+   <div class="jp-gui jp-interface">
+    <div class="jp-controls">
+     <a href="javascript:;" style="display:block" class="jp-play" title="Play">&nbsp;<i class="icon-play"></i></a>
+     <a href="javascript:;" style="display:none" class="jp-pause" title="Pause" ><i class="icon-pause"></i></a>
+     <a href="javascript:;" class="jp-mute"  style="display:block" title="Mute"><i class="icon-volume-up"></i></a>
+     <a href="javascript:;" class="jp-unmute" style="display:none" title="Unmute"><i class="icon-volume-off"></i></a>
+    </div>
+   </div>
+   <div class="jp-no-solution">
+    <span>Update Required</span>
+    To play the media you will need to either update your browser to a recent version or update your <a href="//get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+   </div>
+  </div>
+  <div class="info">
+   <div class="rjp-trackinfo-container  d-flex justify-content-center">
+    <!--<h4 class="rjp-label">Now playing:</h4>-->
+    <p id="trackInfo" class="rjp-info pt-3 pl-5"></p>
+   </div>
+ </div>
+</div>
+  
+</footer>
+  <!--<script type="text/javascript" src="scripts/scripts.js"></script>-->
+<script type="text/javascript" src="//www.radiojar.com/wrappers/api-plugins/v1/radiojar-min.js"></script>
+<script>
+ rjq('#rjp-radiojar-player').radiojar('player', {
+  "streamName": "sdak4d2ptceuv",
+  "enableUpdates": true,
+  "defaultImage": "//www.radiojar.com/content/stations/ag1zfnJhZGlvamFyY29tcjILEgpBdXRoQ2xpZW50GICAsJSlpssIDAsSDlN0YXRpb25Qcm9maWxlGICAgICA5JEKDKIBA2Rldg/image/?resize=210x210",
+  "autoplay":true
+ });
+ rjq('#rjp-radiojar-player').off('rj-track-load-event');
+ rjq('#rjp-radiojar-player').on('rj-track-load-event', function(event, data) {
+   updateInfo(data);
+   if (data.title != "" || data.artist != "") {
+     rjq('.rjp-trackinfo-container').show();
+     rjq('#trackInfo').html(data.artist + ' - "' + data.title + '"')
+   } else {
+     rjq('.rjp-trackinfo-container').hide();
+   }
+ });
+
+ function updateInfo(data) {
+   if (data.thumb) {
+     rjq('#rj-cover').html('<a href="#"><img src="' + data.thumb + '" alt="" title="" /></a>')
+   } else {
+     rjq('#rj-cover').html('')
+   }
+ }
+</script>
+
   </body>
+  
+
+
 
