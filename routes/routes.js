@@ -3,9 +3,24 @@ const express = require("express"),
     
 
 router.get('/', function(req, res){
-    res.render('landing');
-})
+    res.render('index');
+});
 
+router.get('/shows', function(req, res){
+    res.render('shows');
+});
+
+router.get('/schedule', function(req, res){
+    res.render('schedule');
+});
+
+router.get('/chat', function(req, res){
+    res.render('chat');
+});
+
+router.get('/about', function(req, res){
+    res.render('about');
+});
 
     
 module.exports = router;
