@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%
+}
+
+body {
+  background-color: black;
+  font-family: 'Cutive Mono', monospace;
+  /*font-family: 'ghouls_ghosts_and_goblinsRg';*/
+  color:white;
+  margin: 0;
+  padding:0;
+  width:100%;
+  /*min-height:100%;*/
+  /*overflow: hidden;*/
+}
+
+.container {
+    max-width: 1000px!important;
+}
+
+.overlay {
+  position:absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  bottom: 0;
+  height:100%;
+  width:100%;
+  z-index: -5;
+}
+
+a {
+  color:red;
+}
+
+a:hover {
+  color:teal;
+}

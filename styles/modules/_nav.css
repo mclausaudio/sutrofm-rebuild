@@ -1,0 +1,16 @@
+nav {
+    position:absolute !important;
+    width:100%;
+    z-index:100;
+}
+
+.nav-link {
+    color:white!important;
+    opacity:1;
+}
+.nav-link:hover {
+    color:red!important;
+}
+.navbar-brand:hover {
+    color:teal!important;
+}

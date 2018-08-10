@@ -1,0 +1,9 @@
+.about-text {
+    height:80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+      font-family: 'Space Mono', monospace;
+    font-size: 5rem !important;
+    z-index:1000;
+}

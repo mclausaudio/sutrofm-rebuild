@@ -1,0 +1,15 @@
+section {
+    padding-top:2rem;
+}
+
+.section-title {
+    padding: 2rem 0;
+}
+
+.section-subtitle     {
+    padding: 2rem 0;
+}
+
+section iframe {
+    padding-bottom:10rem;
+}

@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: 'Cutive Mono', monospace;
+  /*font-family: 'ghouls_ghosts_and_goblinsRg';*/
+  color:white;
+  margin: 0;
+  padding:0;
+  width:100%;
+  min-height:100%;
+  /*overflow: hidden;*/
+}
+
+.container {
+    max-width: 1000px!important;
+}
+
+.overlay {
+  position:absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  bottom: 0;
+  height:100%;
+  width:100%;
+  z-index: -5;
+}
+
+/*NAV BAR*/ /*NAV BAR*/ /*NAV BAR*/ /*NAV BAR*/ /*NAV BAR*/ /*NAV BAR*/ /*NAV BAR*/ /*NAV BAR*/ 
+nav {
+    position:absolute !important;
+    width:100%;
+    z-index:100;
+}
+
+.nav-link {
+    color:white!important;
+    opacity:1;
+}
+.nav-link:hover {
+    color:red!important;
+}
+.navbar-brand:hover {
+    color:teal!important;
+}
+
+
+/*HERO SECTION*/ /*HERO SECTION*/ /*HERO SECTION*/ /*HERO SECTION*/ /*HERO SECTION*/ /*HERO SECTION*/
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -100;
+    background-color:black;
+}
+
+.hero-text {
+  height:80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+    font-family: 'Space Mono', monospace;
+    font-size: 5rem !important;
+    /*opacity:0;*/
+    /*margin-bottom: 100px;*/
+    /*animation:1.4s fadein 0.3s forwards;*/
+}
+
+.letter:nth-of-type(1) {
+    opacity: 0;
+    animation:1.4s fadein 0.5s forwards;
+}
+.letter:nth-of-type(2) {
+    opacity: 0;
+    animation:1.4s fadein 0.6s forwards;
+}
+.letter:nth-of-type(3) {
+    opacity: 0;
+    animation:1.4s fadein 0.7s forwards;
+}
+.letter:nth-of-type(4) {
+    opacity: 0;
+    animation:1.4s fadein 0.8s forwards;
+}
+.letter:nth-of-type(5) {
+    opacity: 0;
+    animation:1.4s fadein 0.9s forwards;
+}
+.letter:nth-of-type(6) {
+    opacity: 0;
+    animation:1.4s fadein 1s forwards;
+}
+.letter:nth-of-type(6) {
+    opacity: 0;
+    animation:1.4s fadein 1.1s forwards;
+}
+.letter:nth-of-type(7) {
+    opacity: 0;
+    animation:1.4s fadein 1.2s forwards;
+}
+
+@keyframes fadein {
+        100% {
+            opacity: 1;
+            margin-bottom: 5rem;
+        }
+    }
+
+/*PLAYER*/ /*PLAYER*/ /*PLAYER*/ /*PLAYER*/ /*PLAYER*/ /*PLAYER*/ /*PLAYER*/ /*PLAYER*/ 
+.player {
+    background-color: black;
+    height: 80px;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;   
+}
