@@ -1,4 +1,5 @@
 .player {
+    display:flex;
     background-color: black;
     height: 80px;
     color: white;
