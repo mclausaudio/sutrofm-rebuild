@@ -10,17 +10,20 @@ video {
     background-color:black;
 }
 
+
 .hero-text {
   height:80vh;
   display: flex;
   align-items: center;
   justify-content: center;
+      font-family: 'Space Mono', monospace;
+    font-size: 5rem !important;
+    }
 
 }
 
 .hero-text {
-    font-family: 'Space Mono', monospace;
-    font-size: 5rem !important;
+
     /*opacity:0;*/
     /*margin-bottom: 100px;*/
     /*animation:1.4s fadein 0.3s forwards;*/

@@ -1,9 +1,28 @@
 .player {
     display:flex;
     background-color: black;
-    height: 80px;
+    height: 5rem;
     color: white;
     position: fixed;
     bottom: 0;
     width: 100%;
+    justify-content:space-between;
+    
+    &__icon-links {
+        display:flex;
+        height:100%;
+        align-items:center;
+        
+        i {
+            color:white!important;
+            font-size: 2rem;
+            padding-right:1.2rem;
+        }
+        
+        i:hover {
+            color:teal!important;
+        }
+    }
+    
 }
+
