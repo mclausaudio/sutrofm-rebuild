@@ -1,7 +1,9 @@
 nav {
-    position:absolute !important;
+    /*position:absolute !important;*/
     width:100%;
     z-index:100;
+    background-color: rgba(0, 0, 0, .4);
+    /*height:45px;*/
 }
 
 .nav-link {
@@ -13,4 +15,30 @@ nav {
 }
 .navbar-brand:hover {
     color:teal!important;
+}
+
+.nav-left-side {
+    position:fixed;
+    top:25%;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .4);
+    
+    i {
+        padding: .8rem;
+    }
+    
+    &:hover {
+        background-color: rgba(0, 0, 0, .8);
+    }
+    
+    
+    /*i:hover + &__text {*/
+    /*    display:inline-block;*/
+    /*}*/
+    
+    
+    &__text {
+        display:none;
+    }
+    
 }

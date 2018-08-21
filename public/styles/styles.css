@@ -385,6 +385,7 @@ a:hover {
 
 section {
     padding-top:2rem;
+    background-color:transparent;
 }
 
 .section-title {
@@ -400,9 +401,11 @@ section iframe {
 }
 
 nav {
-    position:absolute !important;
+    /*position:absolute !important;*/
     width:100%;
     z-index:100;
+    background-color: rgba(0, 0, 0, .4);
+    /*height:45px;*/
 }
 
 .nav-link {
@@ -417,6 +420,32 @@ nav {
 .navbar-brand:hover {
     color:teal!important;
 }
+
+.nav-left-side {
+    position:fixed;
+    top:25%;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .4);
+    
+    
+    /*i:hover + &__text {*/
+    /*    display:inline-block;*/
+    
+}
+
+.nav-left-side i {
+        padding: .8rem;
+    }
+
+.nav-left-side:hover {
+        background-color: rgba(0, 0, 0, .8);
+    }
+
+/*}*/
+
+.nav-left-side__text {
+        display:none;
+    }
 
 video {
     position: absolute;
@@ -523,12 +552,25 @@ video {
 .player {
     display:flex;
     background-color: black;
-    height: 80px;
+    height: 5rem;
     color: white;
     position: fixed;
     bottom: 0;
     width: 100%;
+    justify-content:space-between;
+    
 }
+
+.player__links {
+        display:flex;
+        height:100%;
+        align-items:center;
+    }
+
+.player__links i {
+            font-size: 2rem;
+            padding-right:1.2rem;
+        }
 
 /*footer {*/
 
@@ -594,14 +636,14 @@ video {
 .radioco-playButton-playing{
 	  font-family: "controls";
 	  position: absolute;
-	  text-size:150%;
+	  font-size:70%;
 	  text-shadow:#333 0px 0px 15px;
 	}
 
 .radioco-playButton-paused{
 	  font-family: "controls";
 	  position: absolute;
-	  text-size:150%;
+	  font-size:70%;
 	  text-shadow:#333 0px 0px 15px;
 	}
 

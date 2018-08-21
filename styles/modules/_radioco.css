@@ -49,7 +49,7 @@
 	.radioco-playButton-playing{
 	  font-family: "controls";
 	  position: absolute;
-	  text-size:150%;
+	  font-size:70%;
 	  text-shadow:#333 0px 0px 15px;
 	}
 
@@ -57,7 +57,7 @@
 	.radioco-playButton-paused{
 	  font-family: "controls";
 	  position: absolute;
-	  text-size:150%;
+	  font-size:70%;
 	  text-shadow:#333 0px 0px 15px;
 	}
 
