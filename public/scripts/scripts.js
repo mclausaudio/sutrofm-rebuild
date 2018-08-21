@@ -12,6 +12,10 @@ $('.toggle-btn').click(function(e){
     }
 });
 
-
-
-
+$('.social-connect-btn').click(function(e){
+    if($('.social-connect-icons').hasClass('show')) {
+        $('.social-connect-icons').collapse('hide');
+    } else {
+        $('.social-connect-icons').collapse('show');
+    }
+});

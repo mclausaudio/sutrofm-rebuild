@@ -8,14 +8,19 @@
     width: 100%;
     justify-content:space-between;
     
-    &__links {
+    &__icon-links {
         display:flex;
         height:100%;
         align-items:center;
         
         i {
+            color:white!important;
             font-size: 2rem;
             padding-right:1.2rem;
+        }
+        
+        i:hover {
+            color:teal!important;
         }
     }
     
