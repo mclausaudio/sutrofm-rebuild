@@ -500,20 +500,7 @@ video {
   justify-content: center;
       font-family: 'Space Mono', monospace;
     font-size: 5rem !important;
-    
-    
-    transition: font-size .3s ease-in-out;
-
 }
-
-.hero-text__title {
-        height:175px;
-        
-    }
-
-.hero-text__title:hover {
-            font-size:6rem!important;
-        }
 
 .hero-text {
 
