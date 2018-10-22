@@ -1,12 +1,18 @@
 .player {
     display:flex;
     background-color: black;
-    height: 5rem;
+    height: 7rem;
     color: white;
     position: fixed;
     bottom: 0;
     width: 100%;
     justify-content:space-between;
+    align-items:center;
+    
+    &__widget {
+        padding-left:1rem;
+        width:80%;
+    }
     
     &__icon-links {
         display:flex;
@@ -15,7 +21,7 @@
         
         i {
             color:white!important;
-            font-size: 2rem;
+            font-size: 3rem;
             padding-right:1.2rem;
         }
         

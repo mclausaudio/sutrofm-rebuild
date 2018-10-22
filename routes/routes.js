@@ -22,5 +22,9 @@ router.get('/about', function(req, res){
     res.render('about');
 });
 
+router.get('/archive', function(req, res){
+    res.render('archive');
+});
+
     
 module.exports = router;
