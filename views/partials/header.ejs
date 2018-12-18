@@ -2,7 +2,8 @@
 <!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
 <!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
 <!--[if IE 8]><html class="preIE9"><![endif]-->
-<!--[if gte IE 9]><!--><html><!--<![endif]-->
+<!--[if gte IE 9]><!--><html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#"><!--<![endif]-->
   <head>
     <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -11,6 +12,10 @@
   <meta name="author" content="Michael Claus">
   <meta name="description" content="SutroFM Online Radio Station">
   <meta name="keywords" content="Sutro FM Online Radio San Francisco California">
+  <!--icon-->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <meta property="og:image" content="/sutross.png" />
 
   <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
   <!-- Custom fonts for this template -->
@@ -71,7 +76,7 @@
     <!--  </a>-->
     <!--</li>-->
     <li class="nav-item">
-      <a class="nav-link" href="https://www.mixcloud.com/sutrofm/" target="_blank" data-toggle="tooltip" data-html="true" data-placement="right" title="Archive">
+      <a class="nav-link" href="https://soundcloud.com/sutrofm" data-toggle="tooltip" data-html="true" data-placement="right" title="Archive">
         <i class="fas fa-headphones-alt"></i>
       </a>
     </li>
@@ -81,7 +86,7 @@
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#" data-toggle="tooltip" data-html="true" data-placement="right" title="News <sup style='color:red'> coming soon</sup>">
+      <a class="nav-link" target="_blank" href="https://sutrofm.tumblr.com/" data-toggle="tooltip" data-html="true" data-placement="right" title="Feed <sup style='color:red'>new!</sup>">
         <i class="far fa-newspaper"></i>
       </a>
     </li>
